@@ -1,7 +1,11 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
+## Coursera R Programming Week 3, Assignment 2
+##
+## G Essex 20Jun15
+##
+## The 'makeCacheMatrix function stores the input from a matrix into a cache so
+## that the values an be used by another function calling this one.
+## To better understand the logic behind this function, read the following:
+## https://github.com/DanieleP/PA2-clarifying_instructions
 
 makeCacheMatrix <- function(x = matrix()) {
         s <- NULL
@@ -22,7 +26,11 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## The cacheSolve function takes the input matrix from the 'makeCacheMatrix'
+## function. If the cache already contains a previous value, the result
+## is output direct from the cache. 
+## If no previous result exists, the function calculates a new set of results.
+## The results are the 'solve' output of a matrix.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
